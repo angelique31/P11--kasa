@@ -1,0 +1,19 @@
+.footer{
+    text-align: center;
+    background-color: black;
+    height: 209px;
+    padding-top: 50px;
+    line-height: 34px;
+    &__logo{
+        width: 122px;
+        height: 40px;
+        color: white;
+    }
+}
+
+p{
+    color: white;
+    font-size: 1.5rem;
+    font-family: global.$font1;
+    font-weight: 500;
+}

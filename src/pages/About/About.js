@@ -1,4 +1,7 @@
 import React from "react";
+import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
+// import BannerAbout from "../../assets/banner-about.png";
 // import { NavLink } from "react-router-dom";
 import Navigation from "../../components/Header";
 
@@ -6,7 +9,8 @@ const About = () => {
   return (
     <div>
       <Navigation />
-      <h1>A propos</h1>
+      <Banner type="About" />
+      <Footer />
     </div>
   );
 };

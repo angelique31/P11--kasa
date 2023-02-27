@@ -1,0 +1,13 @@
+main{
+    color: rgba(246, 246, 246, 1);
+    background-color:  rgba(246, 246, 246, 1);
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px auto auto;
+    padding: 50px;
+    gap: 60px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
