@@ -1,0 +1,28 @@
+.center_page{
+    text-align: center;
+}
+
+.title{
+    color: rgba(255, 96, 96, 1);
+    font-family: global.$font1;
+    font-weight: 700;
+    font-size: 18rem;
+    margin-top: 66px;
+    &__text{
+        color: rgba(255, 96, 96, 1);
+        font-family: global.$font1;
+        font-weight: 500;
+        font-size: 2.25rem;
+        line-height: 66px;
+        margin-bottom: 60px;
+    }
+    &__return{
+        color: rgba(255, 96, 96, 1);
+        font-family: global.$font1;
+        font-size: 1.12rem;
+        font-weight: 500;
+        padding-bottom: 80px;
+        text-decoration: underline;
+    }
+}
+

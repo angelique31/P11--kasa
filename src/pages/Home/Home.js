@@ -1,3 +1,4 @@
+// import React, { useState, useEffect } from "react";
 import React from "react";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
@@ -21,3 +22,5 @@ const Home = () => {
 };
 
 export default Home;
+
+/*************************************** */
