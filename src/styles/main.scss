@@ -1,5 +1,6 @@
 @use './bases/global';
 @use './bases/polices';
+@use'./utils/mixins';
 
 @import './components/header';
 @import './components/banner';
@@ -8,3 +9,4 @@
 @import './components/Dropdown';
 @import './components/footer';
 @import './components/notFoundPage';
+@import './components/locationPage';

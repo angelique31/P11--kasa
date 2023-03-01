@@ -11,6 +11,7 @@
         font-family: global.$font1;
         font-weight: 500;
         margin-left: 20px;
+        font-size: 1.1rem;
     }
     &:hover{
         box-shadow: 1px 1px 12px #777;
@@ -37,7 +38,3 @@
     object-fit: cover;
 }
 
-h2{
-    font-size: 1.1rem;
-
-}

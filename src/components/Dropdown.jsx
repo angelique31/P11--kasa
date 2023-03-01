@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ArrowBottom from "../assets/arrow-bottom.png";
 import ArrowTop from "../assets/arrow-top.png";
 
-const Dropdown = ({ title, text }) => {
+const Dropdown = ({ title, text, titleClass }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDropdown = () => {
@@ -12,7 +12,7 @@ const Dropdown = ({ title, text }) => {
   return (
     <div className="dropdown">
       <button className="dropdown_button" onClick={handleDropdown}>
-        <p>{title}</p>
+      <p className={titleClass}>{title}</p>
         <img
           className="dropdown_arrow"
           src={isOpen ? ArrowTop : ArrowBottom}
