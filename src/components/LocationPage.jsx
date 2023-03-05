@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Navigation from "./Header";
 import Footer from "./Footer";
 import Dropdown from "./Dropdown";
 import Rating from "./Rating";
-// import Slider from "./Slider";
-import Carroussel from "./Caroussel";
+import Slider from "./Slider";
+import Header from "./Header";
 
-
-
+/**
+ * Composant qui affiche les détails de la page d'une location.
+ * @param {Object} props - Les props du composant
+ * @param {Object} props.data - Les données de toutes les locations
+ * @param {string} props.id - L'ID de la location sélectionnée
+ * @returns {JSX.Element} Elément JSX représentant les détails de la page d'une location.
+ *
+ */
 const LocationPage = () => {
   const [data, setData] = useState([]);
   const { id } = useParams();
@@ -26,35 +31,35 @@ const LocationPage = () => {
 
   return (
     <div className="location_page">
-      <Navigation />
+      <Header />
 
       <main className="carroussel">
         {selectedItem && (
           <article key={selectedItem.id}>
-            <section className="caroussel_container">
-              <Carroussel pictures={selectedItem.pictures} />
+            <section className="carroussel__container">
+              <Slider images={selectedItem.pictures} /> 
             </section>
+            
             <section className="content">
               <div>
-                <h2 className="carroussel__title">{selectedItem.title}</h2>
-                <p className="carroussel__city">{selectedItem.location}</p>
-                
+                <h2 className="content__title">{selectedItem.title}</h2>
+                <p className="content__city">{selectedItem.location}</p>
               </div>
 
-              <div className="content_picture">
-                <p className="name">{selectedItem.host.name}</p>
+              <div className="content__picture">
+                <p className="content__picture--name">{selectedItem.host.name}</p>
                 <img
-                  className="picture_name"
+                  className="content__picture--picture_name"
                   src={selectedItem.host.picture}
                   alt={selectedItem.title}
                 />
               </div>
+             </section>
              
-            </section>
-            <section className="city_stars">
-                <ul className="city">
+            <section className="content-info">
+                <ul className="content-info__city">
                   {selectedItem.tags.map((tag) => (
-                    <li className="city_list" key={tag}>
+                    <li className="content-info__city--list" key={tag}>
                       {tag}
                     </li>
                   ))}
@@ -64,7 +69,7 @@ const LocationPage = () => {
           </article>
         )}
       </main>
-      <div className="my-custom-dropdown">
+      <div className="custom-dropdown">
       {/* On vérifie si l'objet "selectedItem" existe avant de continuer à afficher les dropdowns. Ensuite, il utilise la syntaxe conditionnelle pour vérifier si les propriétés "description" et "equipments" sont définies avant d'afficher le texte. */}
       {selectedItem && (
     <>

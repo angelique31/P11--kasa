@@ -1,16 +1,12 @@
 .navigation{
-    margin-top: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
-    display: flex;
-    justify-content: space-between;
+    margin: 40px 100px 36px 100px;
+    @include mixins.flexBetween;
     &__link{
-        display: flex;
-        justify-content: space-between;
+      @include mixins.flexBetween;
         gap: 57px;
         margin-top: 20px;
         &--active{
-            color: rgba(255, 96, 96, 1);
+            color: global.$primary;
             font-size: 1.5rem;
             font-family: global.$font1; 
             transition: 0.2s;
@@ -27,12 +23,11 @@
 
 .nav-active{
     position: relative;
-    
     &::after {
       content: "";
       height: 2px;
       width: 0;
-      background: rgba(255, 96, 96, 1);
+      background: global.$primary;
       position: absolute;
       border-radius: 10px;
       left: 50%;

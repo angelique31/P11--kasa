@@ -1,13 +1,10 @@
 .gallery{
-    color: rgba(246, 246, 246, 1);
-    background-color:  rgba(246, 246, 246, 1);
+    color: global.$lightgrey;
+    background-color:  global.$lightgrey;
     border-radius: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 40px auto auto;
+    margin: 40px 100px 60px 100px;
     padding: 50px;
     gap: 60px;
-    margin-bottom: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
 }

@@ -8,13 +8,12 @@
     &__logo{
         width: 122px;
         height: 40px;
-        color: white;
+        color: global.$white;
     }
-}
-
-p{
-    color: white;
-    font-size: 1.5rem;
-    font-family: global.$font1;
-    font-weight: 500;
+    &__text{
+        color: global.$white;
+        font-size: 1.5rem;
+        font-family: global.$font1;
+        font-weight: 500;
+    }
 }

@@ -2,7 +2,15 @@ import React, { useState } from "react";
 import ArrowBottom from "../assets/arrow-bottom.png";
 import ArrowTop from "../assets/arrow-top.png";
 
-const Dropdown = ({ title, text, titleClass, textClass }) => {
+/**
+ * Composant Dropdown affichant un titre et un contenu qui se déploie/ferme en cliquant sur le titre.
+ * @param {Object} props - L'objet de props
+ * @param {string} props.title - Le titre affiché dans le Dropdown.
+ * @param {string} props.text - Le contenu du Dropdown.
+ * @param {string} props.titleClass - La classe CSS pour le titre.
+ * @returns {JSX.Element} - Le composant Dropdown.
+ */
+const Dropdown = ({ title, text, titleClass }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDropdown = () => {
@@ -20,9 +28,8 @@ const Dropdown = ({ title, text, titleClass, textClass }) => {
         />
       </button>
       {isOpen && (
-        <div className="dropdown_content">
-          {/* <p className="dropdown_content--text">{text}</p> */}
-          <p className={`dropdown_content--text ${textClass}`}>{text}</p>
+        <div className="dropdown__content">
+          <p className={`dropdown__content--text description-text`}>{text}</p>
         </div>
       )}
     </div>

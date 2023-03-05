@@ -1,4 +1,3 @@
-
 .caroussel_img{
     width: 100%;
     max-width: 100%;
@@ -7,73 +6,68 @@
     border-radius: 25px;
 }
 
-.carroussel__title{
+.content{
+  @include mixins.flexBetween;
+  align-items: center;
+  &__title{
     font-size: 2.25rem;
     @include mixins.fonts;
-}
-
-.carroussel__city{
+  }
+  &__city{
     font-size: 1.1rem;
     @include mixins.fonts;
     line-height: 26px;
     margin-bottom: 23px;
+  }
 }
 
-.city{
+.content-info{
+  @include mixins.flexBetween;
+  &__city{
     display: flex;
     gap: 20px;
+    &--list{
+      padding: 6px 40px 3px 40px;
+      background-color: global.$primary;
+      border-radius: 10px;
+      color: global.$white;
+      font-size: 0.8rem;
+      font-family: global.$font1;
+      font-weight: 500;
+    }
+  }
 }
 
-.city_list{
-    padding: 6px 40px 3px 40px;
-    background-color: rgba(255, 96, 96, 1);
-    border-radius: 10px;
-    color: white;
-    font-size: 0.8rem;
-    font-family: global.$font1;
-    font-weight: 500;
-}
-
-.content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.name{
-    color: rgba(255, 96, 96, 1);
-    width: 93px;
-    font-size: 1.1rem;
-    text-align: right;
-}
-
-.content_picture{
+.content__picture{
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.picture_name{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+    &--name{
+      color: global.$primary;
+      width: 93px;
+      font-size: 1.1rem;
+      text-align: right;
+    }
+    &--picture_name{
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
 }
 
 /**************** Dropdown ***************************/
-.my-custom-dropdown {
-    display: flex;
-    justify-content: space-between;
+.custom-dropdown {
+    @include mixins.flexBetween;
     height: 50px;
-    // margin-bottom: 230px;
     margin: 0 100px 230px 100px;
   }
   
-  .my-custom-dropdown > * {
+  .custom-dropdown > * {
     width: 45%;
     margin: 0;
   }
   
-  .my-custom-dropdown > *:first-child {
+  .custom-dropdown > *:first-child {
     width: 45%;
     margin: 0;
   }
@@ -82,17 +76,14 @@
     font-size: 1.1rem;
     font-family: global.$font1;
     font-weight: 500;
+    color: global.$white;
   }
 
   .description-text{
     font-size: 1.1rem;
     font-family: global.$font1;
     font-weight: 400;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
   }
 
-  .city_stars{
-    display: flex;
-    justify-content: space-between;
-  }
+  

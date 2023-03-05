@@ -3,3 +3,40 @@
     font-weight: 500;
     color: rgba(255, 96, 96, 1);
 }
+
+@mixin flexBetween{
+	display: flex;
+	justify-content: space-between;
+}
+
+@mixin borderRadius($radius) {
+    border-radius: $radius;
+}
+
+@mixin buttonImg {
+    border: none;
+    &--left{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        transition: transform 1s ease;
+        &:active{
+            transform: scale(0.8);
+        }
+    }
+    &--right{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        transition: transform 1s ease;
+        &:active{
+            transform: scale(0.8);
+        }
+    }
+}

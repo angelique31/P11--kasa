@@ -5,33 +5,36 @@
     &_button{
         width: 100%;
         height: 47px;
-        background-color: rgba(255, 96, 96, 1);
+        background-color: global.$primary;
         border: none;
         border-radius: 5px;
-        display: flex;
-        justify-content: space-between;
+        @include mixins.flexBetween;
         align-items: center;
-        margin-top: 31px;
-        margin-bottom: 12px;
-        padding-right: 18px;
-        padding-left: 18px;
+        margin: 31px 0 12px 0;
+        padding: 0 18px;
         cursor: pointer;
+        color: global.$white;
+        font-family: global.$font1;
+        font-weight: 500;
+        font-size: 1.5rem;
     }
 }
 
-.dropdown_content{
-    background-color: #f7f7f7;
+.dropdown__content{
+    background-color: global.$lightgrey;
     border-radius: 10px;
     min-height: 133px;
     position: relative;
     top: -10px;
     z-index: 40;
     &--text{
-        color: rgba(255, 96, 96, 1);
-        padding: 27px 27px 20px 18px;
+        color: global.$primary;
+        padding: 18px 27px 20px 18px;
         font-size: 1.5rem;
-        font-weight: 400;
+        font-weight: 400;     
         font-family: global.$font1;
     }
 }
+
+
 

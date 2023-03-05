@@ -1,46 +1,27 @@
 .carroussel{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 100px;
+    &__container{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    &__number{
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+        font-size: 1.2rem;
+        color: global.$white;
+        z-index: 1;
+        left: 50%;
+    }
 }
 
-.caroussel_container {
-    position: relative;
+.button__img {
+    @include mixins.buttonImg;
 }
-  
-.button_img--left {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    z-index: 1;
-    cursor: pointer;
-    transition: transform 1s ease;
-    &:active{
-        transform: scale(0.8);
-    }
+
+.slider-image{
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
 }
-  
-.button_img--right {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    z-index: 1;
-    cursor: pointer;
-    transition: transform 1s ease;
-    &:active{
-        transform: scale(0.8);
-    }
-  }
-  
-.carrousel__copy {
-    position: absolute;
-    bottom: 45px;
-    right: 20px;
-    font-size: 1.2rem;
-    color: white;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
-}
-  

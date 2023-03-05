@@ -2,13 +2,18 @@ import React from "react";
 import Banner from "../../components/Banner";
 import Dropdown from "../../components/Dropdown";
 import Footer from "../../components/Footer";
-import Navigation from "../../components/Header";
 import ArrowTop from "../../assets/arrow-top.png";
+import Header from "../../components/Header";
 
+/**
+ * Composant représentant la page À propos
+ * Affiche des informations dans des dropdowns
+ * @returns {JSX.Element} composant principal de la page à propos
+ */
 const About = () => {
   return (
     <div>
-      <Navigation />
+      <Header />
       <Banner type="About" />
       <Dropdown
         title="Fiabilité"
