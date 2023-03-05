@@ -1,0 +1,46 @@
+.carroussel{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.caroussel_container {
+    position: relative;
+}
+  
+.button_img--left {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 1s ease;
+    &:active{
+        transform: scale(0.8);
+    }
+}
+  
+.button_img--right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    transition: transform 1s ease;
+    &:active{
+        transform: scale(0.8);
+    }
+  }
+  
+.carrousel__copy {
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+    font-size: 1.2rem;
+    color: white;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  

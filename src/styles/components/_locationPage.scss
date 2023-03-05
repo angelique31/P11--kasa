@@ -1,6 +1,3 @@
-.caroussel_container{
-    margin: 30px 100px 30px 100px;
-}
 
 .caroussel_img{
     width: 100%;
@@ -13,25 +10,22 @@
 .carroussel__title{
     font-size: 2.25rem;
     @include mixins.fonts;
-    margin-left: 100px;
 }
 
 .carroussel__city{
     font-size: 1.1rem;
     @include mixins.fonts;
     line-height: 26px;
-    margin-left: 100px;
     margin-bottom: 23px;
 }
 
 .city{
     display: flex;
     gap: 20px;
-    margin-left: 100px;
 }
 
 .city_list{
-    padding: 3px 40px 3px 40px;
+    padding: 6px 40px 3px 40px;
     background-color: rgba(255, 96, 96, 1);
     border-radius: 10px;
     color: white;
@@ -44,8 +38,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 100px;
 }
+
 .name{
     color: rgba(255, 96, 96, 1);
     width: 93px;
@@ -65,24 +59,40 @@
     border-radius: 50%;
 }
 
+/**************** Dropdown ***************************/
 .my-custom-dropdown {
     display: flex;
     justify-content: space-between;
     height: 50px;
-    margin-bottom: 182px;
+    // margin-bottom: 230px;
+    margin: 0 100px 230px 100px;
   }
   
   .my-custom-dropdown > * {
-    width: 582px;
-
+    width: 45%;
+    margin: 0;
   }
   
   .my-custom-dropdown > *:first-child {
-    width: 582px;
+    width: 45%;
+    margin: 0;
   }
 
   .description-title{
     font-size: 1.1rem;
     font-family: global.$font1;
     font-weight: 500;
+  }
+
+  .description-text{
+    font-size: 1.1rem;
+    font-family: global.$font1;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .city_stars{
+    display: flex;
+    justify-content: space-between;
   }

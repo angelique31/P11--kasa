@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About/About";
 import NotFoundPage from "./pages/Error/NotFoundPage";
 import Home from "./pages/Home/Home";
-import LocationPage from "./pages/LocationPage/LocationPage";
+import LocationPage from "./components/LocationPage";
 
 const App = () => {
   return (

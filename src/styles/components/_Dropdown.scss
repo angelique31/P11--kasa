@@ -15,19 +15,20 @@
         margin-bottom: 12px;
         padding-right: 18px;
         padding-left: 18px;
+        cursor: pointer;
     }
 }
 
 .dropdown_content{
     background-color: #f7f7f7;
     border-radius: 10px;
-    min-height: 249px;
+    min-height: 133px;
     position: relative;
     top: -10px;
     z-index: 40;
     &--text{
         color: rgba(255, 96, 96, 1);
-        padding: 27px 27px 0 18px;
+        padding: 27px 27px 20px 18px;
         font-size: 1.5rem;
         font-weight: 400;
         font-family: global.$font1;
