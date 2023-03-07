@@ -41,30 +41,33 @@ const LocationPage = () => {
             </section>
             
             <section className="content">
-              <div>
+              <div className="content_info">
                 <h2 className="content__title">{selectedItem.title}</h2>
                 <p className="content__city">{selectedItem.location}</p>
-              </div>
-
-              <div className="content__picture">
-                <p className="content__picture--name">{selectedItem.host.name}</p>
-                <img
-                  className="content__picture--picture_name"
-                  src={selectedItem.host.picture}
-                  alt={selectedItem.title}
-                />
-              </div>
-             </section>
-             
-            <section className="content-info">
                 <ul className="content-info__city">
                   {selectedItem.tags.map((tag) => (
-                    <li className="content-info__city--list" key={tag}>
-                      {tag}
-                    </li>
+                  <li className="content-info__city--list" key={tag}>
+                    {tag}
+                  </li>
                   ))}
                 </ul>
-              <Rating rating={selectedItem.rating} />
+              </div>
+
+              <div className="content-owner">
+                <div className="content-owner__picture">
+                  <p className="content-owner__picture--name">{selectedItem.host.name}</p>
+                  <img
+                    className="content-owner__picture--img"
+                    src={selectedItem.host.picture}
+                    alt={selectedItem.title}
+                  />
+                </div>
+                <Rating rating={selectedItem.rating} />
+              </div>
+             
+           
+                
+              
             </section>
           </article>
         )}
