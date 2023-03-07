@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Footer from "./Footer";
-import Dropdown from "./Dropdown";
-import Rating from "./Rating";
-import Slider from "./Slider";
-import Header from "./Header";
+import Footer from "../../components/Footer";
+import Dropdown from "../../components/Dropdown";
+import Rating from "../../components/Rating";
+import Slider from "../../components/Slider";
+import Header from "../../components/Header";
 
 /**
  * Composant qui affiche les détails de la page d'une location.

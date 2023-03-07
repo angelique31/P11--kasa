@@ -1,6 +1,9 @@
 .banner__container{
     position: relative;
     margin: 30px 100px 0 100px;
+    @media screen and (max-width: 585px) {
+        margin: 10px 20px 0 20px
+    }
     &--title{
         position: absolute;
         top: 50%;
@@ -12,6 +15,19 @@
         color: global.$white;
         white-space: nowrap;
         z-index: 10;
+        @media screen and (max-width: 1082px) {
+            font-size: 2.5rem;
+        }
+        @media screen and (max-width: 870px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 693px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 423px) {
+            white-space: normal;
+            width: 230px;
+        }
     }
     &--picture{
         width: 100%;
@@ -20,6 +36,10 @@
         object-fit: cover;
         @include mixins.borderRadius(25px);
         filter: brightness(0.75);
+        @media screen and (max-width: 693px) {
+            @include mixins.borderRadius(10px);
+            height: 111px;
+        }
     }
 }
 

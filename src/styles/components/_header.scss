@@ -1,17 +1,32 @@
 .navigation{
     margin: 40px 100px 36px 100px;
     @include mixins.flexBetween;
+    @media screen and (max-width: 585px) {
+      margin: 20px;
+    }
     &__link{
       @include mixins.flexBetween;
         gap: 57px;
         margin-top: 20px;
+        @media screen and (max-width: 585px) {
+          gap: 34px;
+        }
+        @media screen and (max-width: 405px) {
+          gap: 24px;
+        }
         &--active{
             color: global.$primary;
             font-size: 1.5rem;
             font-family: global.$font1; 
             transition: 0.2s;
             cursor: pointer;
+            @media screen and (max-width: 787px) {
+              font-size: 1.2rem;
+          }
+          @media screen and (max-width: 585px) {
+            font-size: 1rem;
         }
+      }
     }
     
 }
@@ -19,6 +34,10 @@
 .nav__logo{
     width: 210px;
     height: 68px;
+    @media screen and (max-width: 1082px) {
+      width: 145px;
+      height: 47px;
+  }
 }
 
 .nav-active{

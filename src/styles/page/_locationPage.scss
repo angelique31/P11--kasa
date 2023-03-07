@@ -12,6 +12,9 @@
   &__title{
     font-size: 2.25rem;
     @include mixins.fonts;
+    @media screen and (max-width: 587px) {
+      font-size: 1.1rem;
+    }
   }
   &__city{
     font-size: 1.1rem;
@@ -23,6 +26,9 @@
 
 .content-info{
   @include mixins.flexBetween;
+  @media screen and (max-width: 810px) {
+    display: block;
+  }
   &__city{
     display: flex;
     gap: 20px;
@@ -60,16 +66,27 @@
     @include mixins.flexBetween;
     height: 50px;
     margin: 0 100px 230px 100px;
+    @media screen and (max-width: 679px) {
+      width: 90%;
+      margin: 0 20px 230px 20px;
+      display: block;
+    }
   }
   
   .custom-dropdown > * {
     width: 45%;
     margin: 0;
+    @media screen and (max-width: 679px) {
+     width: 100%;
+    }
   }
   
   .custom-dropdown > *:first-child {
     width: 45%;
     margin: 0;
+    @media screen and (max-width: 679px) {
+      width: 100%;
+     }
   }
 
   .description-title{
@@ -83,7 +100,10 @@
     font-size: 1.1rem;
     font-family: global.$font1;
     font-weight: 400;
-    padding: 15px 0;
+    padding: 15px;
+    @media screen and (max-width: 587px) {
+      font-size: 0.75rem;
+    }
   }
 
   

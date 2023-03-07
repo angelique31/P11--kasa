@@ -22,7 +22,7 @@ const Dropdown = ({ title, text, titleClass }) => {
       <button className="dropdown_button" onClick={handleDropdown}>
       <p className={titleClass}>{title}</p>
         <img
-          className="dropdown_arrow"
+          className="dropdown_button--arrow"
           src={isOpen ? ArrowTop : ArrowBottom}
           alt="arrow"
         />

@@ -26,6 +26,11 @@
         &:active{
             transform: scale(0.8);
         }
+        @media screen and (max-width: 810px) {
+            width: 11.6px;
+            height: 20px;
+          }
+
     }
     &--right{
         position: absolute;
@@ -38,5 +43,10 @@
         &:active{
             transform: scale(0.8);
         }
+        @media screen and (max-width: 810px) {
+            width: 11.6px;
+            height: 20px;
+          }
     }
+    
 }
