@@ -64,10 +64,6 @@ const LocationPage = () => {
                 </div>
                 <Rating rating={selectedItem.rating} />
               </div>
-             
-           
-                
-              
             </section>
           </article>
         )}
@@ -85,11 +81,11 @@ const LocationPage = () => {
           titleClass="description-title"
           textClass="description-text"
           text={
-            <ul>
-              {selectedItem.equipments.map((equipment, index) => (
-                <li className="equipments"  key={index}>{equipment}</li>
-              ))}
-            </ul>
+              <ul>
+                {selectedItem.equipments.map((equipment, index) => (
+                  <li className="equipments"  key={index}>{equipment}</li>
+                ))}
+              </ul>
           }
         />
       )}

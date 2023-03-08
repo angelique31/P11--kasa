@@ -18,6 +18,9 @@
         color: global.$white;
         z-index: 1;
         left: 50%;
+        @media screen and (max-width: 801px) {
+            bottom: 26px;
+          }
     }
 }
 

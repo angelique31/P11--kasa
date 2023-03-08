@@ -3,5 +3,14 @@
     justify-content: flex-end;
     @media screen and (max-width: 810px) {
         display: block;
-      }
+    }
+}
+
+.star{
+  width: 30px;
+  height: 30px;
+  @media screen and (max-width: 810px) {
+    width: 15px;
+    height: 15px;
+  }
 }

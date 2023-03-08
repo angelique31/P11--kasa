@@ -5,62 +5,6 @@
     object-fit: cover;
     border-radius: 25px;
 }
-
-// .content{
-//   @include mixins.flexBetween;
-//   align-items: center;
-//   &__title{
-//     font-size: 2.25rem;
-//     @include mixins.fonts;
-//     @media screen and (max-width: 587px) {
-//       font-size: 1.1rem;
-//     }
-//   }
-//   &__city{
-//     font-size: 1.1rem;
-//     @include mixins.fonts;
-//     line-height: 26px;
-//     margin-bottom: 23px;
-//   }
-// }
-
-// .content-info{
-//   @include mixins.flexBetween;
-//   @media screen and (max-width: 810px) {
-//     display: block;
-//   }
-//   &__city{
-//     display: flex;
-//     gap: 20px;
-//     &--list{
-//       padding: 6px 40px 3px 40px;
-//       background-color: global.$primary;
-//       border-radius: 10px;
-//       color: global.$white;
-//       font-size: 0.8rem;
-//       font-family: global.$font1;
-//       font-weight: 500;
-//     }
-//   }
-// }
-
-// .content__picture{
-//     display: flex;
-//     gap: 10px;
-//     align-items: center;
-//     &--name{
-//       color: global.$primary;
-//       width: 93px;
-//       font-size: 1.1rem;
-//       text-align: right;
-//     }
-//     &--picture_name{
-//       width: 64px;
-//       height: 64px;
-//       border-radius: 50%;
-//     }
-// }
-/****************Test*************/
 .content{
   display: flex;
     justify-content: space-between;
@@ -71,7 +15,7 @@
     &__title{
       font-size: 2.25rem;
       @include mixins.fonts;
-        @media screen and (max-width: 587px) {
+        @media screen and (max-width: 801px) {
         font-size: 1.1rem;
       }
     }
@@ -80,6 +24,9 @@
       @include mixins.fonts;
       line-height: 26px;
       margin-bottom: 23px;
+      @media screen and (max-width: 801px) {
+        font-size: 0.8rem;
+      }
     }
     
 }
@@ -96,6 +43,10 @@
       font-size: 0.8rem;
       font-family: global.$font1;
       font-weight: 500;
+      @media screen and (max-width: 801px) {
+        font-size: 0.6rem;
+        padding: 4px 20px 4px 20px;
+      }
     }
 }
 
@@ -138,10 +89,23 @@
     @include mixins.flexBetween;
     height: 50px;
     margin: 0 100px 230px 100px;
+    @media screen and (max-width: 1322px) {
+      margin: 0 100px 270px 100px;
+    }
+    @media screen and (max-width: 1082px) {
+      margin: 0 100px 310px 100px;
+    }
+    @media screen and (max-width: 950px) {
+      margin: 0 100px 350px 100px;
+    }
     @media screen and (max-width: 679px) {
-      width: 90%;
+      width: 74%;
       margin: 0 20px 230px 20px;
       display: block;
+    }
+    @media screen and (max-width: 585px) {
+      width: 90%;
+      margin: 0 20px 230px 20px;
     }
   }
   
@@ -149,7 +113,12 @@
     width: 45%;
     margin: 0;
     @media screen and (max-width: 679px) {
-     width: 100%;
+      width: 96%;
+      margin-left: 78px;
+    }
+    @media screen and (max-width: 585px) {
+      margin-left: 0;
+      width: 100%;
     }
   }
   
@@ -157,8 +126,13 @@
     width: 45%;
     margin: 0;
     @media screen and (max-width: 679px) {
-      width: 100%;
+      width: 96%;
+      margin-left: 78px;
      }
+     @media screen and (max-width: 585px) {
+      margin-left: 0;
+      width: 100%;
+    }
   }
 
   .description-title{
@@ -166,6 +140,10 @@
     font-family: global.$font1;
     font-weight: 500;
     color: global.$white;
+    @media screen and (max-width: 679px) {
+      font-size: 0.8rem;
+     }
+     
   }
 
   .description-text{
@@ -173,7 +151,13 @@
     font-family: global.$font1;
     font-weight: 400;
     padding: 15px;
-    @media screen and (max-width: 587px) {
+    @media screen and (max-width: 950px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 786px) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 679px) {
       font-size: 0.75rem;
     }
   }
