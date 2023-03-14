@@ -29,7 +29,9 @@ const Dropdown = ({ title, text, titleClass }) => {
       </button>
       {isOpen && (
         <div className="dropdown__content">
-          <p className={`dropdown__content--text description-text`}>{text}</p>
+          <div className={`dropdown__content--text description-text`}>
+            {text}
+          </div>
         </div>
       )}
     </div>
