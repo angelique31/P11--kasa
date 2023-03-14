@@ -2,23 +2,23 @@
 
 ![image](https://user-images.githubusercontent.com/93211301/225006679-c6a7c32b-8a98-49a2-9be2-4eca95cf8565.png)
 
-## Project's presentation
+## 1. Project's presentation
 
 Kasa has been in the business of renting apartments between individuals for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leaders in private apartment rentals in France.
 
 The Kasa site was coded more than 10 years ago in ASP.NET with significant legacy code, and we are asked to build a new version with React & React-Router.
 
-## Technical constraints
+## 2. Technical constraints
 
 You can find Kasa's coding guidelines here :
 
 https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf
 
-## Models on figma
+## 3. Models on figma
 
 https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1&t=oePUhvZxRQ56WIPc-0
 
-## Getting Started with Create React App
+## 4. Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
