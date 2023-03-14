@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import BannerHome from "../assets/banner-home.png";
 import BannerAbout from "../assets/banner-about.png";
