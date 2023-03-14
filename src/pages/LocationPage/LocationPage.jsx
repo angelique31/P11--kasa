@@ -37,25 +37,27 @@ const LocationPage = () => {
         {selectedItem && (
           <article key={selectedItem.id}>
             <section className="carroussel__container">
-              <Slider images={selectedItem.pictures} /> 
+              <Slider images={selectedItem.pictures} />
             </section>
-            
+
             <section className="content">
               <div className="content_info">
                 <h2 className="content__title">{selectedItem.title}</h2>
                 <p className="content__city">{selectedItem.location}</p>
                 <ul className="content-info__city">
                   {selectedItem.tags.map((tag) => (
-                  <li className="content-info__city--list" key={tag}>
-                    {tag}
-                  </li>
+                    <li className="content-info__city--list" key={tag}>
+                      {tag}
+                    </li>
                   ))}
                 </ul>
               </div>
 
               <div className="content-owner">
                 <div className="content-owner__picture">
-                  <p className="content-owner__picture--name">{selectedItem.host.name}</p>
+                  <p className="content-owner__picture--name">
+                    {selectedItem.host.name}
+                  </p>
                   <img
                     className="content-owner__picture--img"
                     src={selectedItem.host.picture}
@@ -69,29 +71,35 @@ const LocationPage = () => {
         )}
       </main>
       <div className="custom-dropdown">
-      {/* On vérifie si l'objet "selectedItem" existe avant de continuer à afficher les dropdowns. Ensuite, il utilise la syntaxe conditionnelle pour vérifier si les propriétés "description" et "equipments" sont définies avant d'afficher le texte. */}
-      {selectedItem && (
-    <>
-      {selectedItem.description && (
-        <Dropdown title="Description" titleClass="description-title" text={selectedItem.description} textClass="description-text"/>
-      )}
-      {selectedItem.equipments && (
-        <Dropdown
-          title="Equipements"
-          titleClass="description-title"
-          textClass="description-text"
-          text={
-              <ul>
-                {selectedItem.equipments.map((equipment, index) => (
-                  <li className="equipments"  key={index}>{equipment}</li>
-                ))}
-              </ul>
-          }
-        />
-      )}
-    </>
-  )}
-       
+        {/* On vérifie si l'objet "selectedItem" existe avant de continuer à afficher les dropdowns. Ensuite, il utilise la syntaxe conditionnelle pour vérifier si les propriétés "description" et "equipments" sont définies avant d'afficher le texte. */}
+        {selectedItem && (
+          <>
+            {selectedItem.description && (
+              <Dropdown
+                title="Description"
+                titleClass="description-title"
+                text={selectedItem.description}
+                textClass="description-text"
+              />
+            )}
+            {selectedItem.equipments && (
+              <Dropdown
+                title="Equipements"
+                titleClass="description-title"
+                textClass="description-text"
+                text={
+                  <ul>
+                    {selectedItem.equipments.map((equipment, index) => (
+                      <li className="equipments" key={index}>
+                        {equipment}
+                      </li>
+                    ))}
+                  </ul>
+                }
+              />
+            )}
+          </>
+        )}
       </div>
       <Footer />
     </div>
@@ -99,7 +107,3 @@ const LocationPage = () => {
 };
 
 export default LocationPage;
-
-
-
-

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import BannerHome from "../assets/banner-home.png";
 import BannerAbout from "../assets/banner-about.png";
@@ -16,11 +17,19 @@ const Banner = ({ type }) => {
       <h1 className="banner__container--title">
         Chez vous, partout et ailleurs
       </h1>
-      <img className="banner__container--picture" src={BannerHome} alt="bannière" />
+      <img
+        className="banner__container--picture"
+        src={BannerHome}
+        alt="bannière"
+      />
     </div>
   ) : (
     <div className="banner__container">
-      <img className="banner__container--picture" src={BannerAbout} alt="bannière" />
+      <img
+        className="banner__container--picture"
+        src={BannerAbout}
+        alt="bannière"
+      />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import ArrowLeft from "../assets/arrow-left.png";
 import ArrowRight from "../assets/arrow-right.png";
 
@@ -12,23 +12,37 @@ const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const previousImage = () => {
-    setCurrentIndex(prevIndex => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   const nextImage = () => {
-    setCurrentIndex(prevIndex => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
     <div>
-      <button className="button__img"  onClick={previousImage}>
+      <button className="button__img" onClick={previousImage}>
         <img className="button__img--left" src={ArrowLeft} alt="arrowleft" />
       </button>
-      <button className='button__img' onClick={nextImage}>
-        <img className="button__img--right" src={ArrowRight} alt="arrow-right" />
+      <button className="button__img" onClick={nextImage}>
+        <img
+          className="button__img--right"
+          src={ArrowRight}
+          alt="arrow-right"
+        />
       </button>
-      <span className="carroussel__number">{currentIndex + 1}/{images.length}</span>
-      <img className="slider-image" src={images[currentIndex]} alt="slider images" />
+      <span className="carroussel__number">
+        {currentIndex + 1}/{images.length}
+      </span>
+      <img
+        className="slider-image"
+        src={images[currentIndex]}
+        alt="slider images"
+      />
     </div>
   );
 };

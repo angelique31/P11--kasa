@@ -1,5 +1,8 @@
 .center_page{
     text-align: center;
+    @media screen and (max-width: 400px) {
+        margin-top: 200px;
+    }
 }
 
 .title{
@@ -8,6 +11,12 @@
     font-weight: 700;
     font-size: 18rem;
     margin-top: 66px;
+    @media screen and (max-width: 750px) {
+        font-size: 10rem;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 6rem;
+    }
     &__text{
         color: rgba(255, 96, 96, 1);
         font-family: global.$font1;
@@ -15,6 +24,12 @@
         font-size: 2.25rem;
         line-height: 66px;
         margin-bottom: 60px;
+        @media screen and (max-width: 750px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 1.1rem;
+        }
     }
     &__return{
         color: rgba(255, 96, 96, 1);
@@ -23,6 +38,9 @@
         font-weight: 500;
         padding-bottom: 80px;
         text-decoration: underline;
+        @media screen and (max-width: 400px) {
+            font-size: 0.9rem;
+        }
     }
 }
 

@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <Banner type="Home" />
       <main className="gallery">
         {data.map((item) => (
@@ -41,5 +41,3 @@ const Home = () => {
 };
 
 export default Home;
-
-

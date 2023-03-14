@@ -20,7 +20,7 @@ const Dropdown = ({ title, text, titleClass }) => {
   return (
     <div className="dropdown">
       <button className="dropdown_button" onClick={handleDropdown}>
-      <p className={titleClass}>{title}</p>
+        <p className={titleClass}>{title}</p>
         <img
           className="dropdown_button--arrow"
           src={isOpen ? ArrowTop : ArrowBottom}

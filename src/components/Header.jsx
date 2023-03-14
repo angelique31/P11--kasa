@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 import logoKasa from "../assets/logo-kasa.png";
 
 /**
-  * Le composant Header contient un logo et des liens de navigation pour les pages Accueil et A propos.
-  *
-  * @returns {JSX.Element} Le contenu JSX du composant Header.
-*/
+ * Le composant Header contient un logo et des liens de navigation pour les pages Accueil et A propos.
+ *
+ * @returns {JSX.Element} Le contenu JSX du composant Header.
+ */
 const Header = () => {
   return (
     <div className="navigation">
