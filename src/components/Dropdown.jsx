@@ -10,7 +10,7 @@ import ArrowTop from "../assets/arrow-top.png";
  * @param {string} props.titleClass - La classe CSS pour le titre.
  * @returns {JSX.Element} - Le composant Dropdown.
  */
-const Dropdown = ({ title, text, titleClass }) => {
+const Dropdown = ({ title, text, titleClass, contentClass }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDropdown = () => {
@@ -28,7 +28,7 @@ const Dropdown = ({ title, text, titleClass }) => {
         />
       </button>
       {isOpen && (
-        <div className="dropdown__content">
+        <div className={`dropdown__content ${contentClass}`}>
           <div className={`dropdown__content--text description-text`}>
             {text}
           </div>

@@ -1,3 +1,7 @@
+.location_page{
+  display: flex;
+  flex-direction: column;
+}
 .caroussel_img{
     width: 100%;
     max-width: 100%;
@@ -85,25 +89,18 @@
 .custom-dropdown {
     @include mixins.flexBetween;
     height: 50px;
-    margin: 0 100px 230px 100px;
-    @media screen and (max-width: 1322px) {
-      margin: 0 100px 270px 100px;
-    }
-    @media screen and (max-width: 1082px) {
-      margin: 0 100px 310px 100px;
-    }
-    @media screen and (max-width: 950px) {
-      margin: 0 100px 350px 100px;
-    }
+    margin: 0 100px 50px 100px;
+    flex: 1;
     @media screen and (max-width: 679px) {
       width: 74%;
-      margin: 0 20px 230px 20px;
+      margin: 0 20px 50px 20px;
       display: block;
     }
     @media screen and (max-width: 585px) {
+      display: inline-block;
       width: 90%;
-      margin: 0 20px 230px 20px;
       margin: 0 20px 0px 20px;
+  
     }
   }
   

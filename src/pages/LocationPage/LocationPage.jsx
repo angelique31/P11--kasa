@@ -71,7 +71,7 @@ const LocationPage = () => {
         )}
       </main>
       <div className="custom-dropdown">
-        {/* On vérifie si l'objet "selectedItem" existe avant de continuer à afficher les dropdowns. Ensuite, il utilise la syntaxe conditionnelle pour vérifier si les propriétés "description" et "equipments" sont définies avant d'afficher le texte. */}
+        {/* On vérifie si l'objet "selectedItem" existe avant de continuer à afficher les dropdowns*/}
         {selectedItem && (
           <>
             {selectedItem.description && (

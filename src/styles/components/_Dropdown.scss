@@ -1,5 +1,4 @@
 .dropdown{
-    max-width: 1023px;
     width: 70%;
     margin: auto;
     @media screen and (max-width: 585px) {
@@ -20,10 +19,6 @@
         font-family: global.$font1;
         font-weight: 500;
         font-size: 1.5rem;
-        // @media screen and (max-width: 679px) {
-        //     width: 80%;
-        //     height: 29px;
-        //   }
         @media screen and (max-width: 679px) {
             font-size: 0.8rem;
             width: 100%;
@@ -39,10 +34,13 @@
 .dropdown__content{
     background-color: global.$lightgrey;
     border-radius: 10px;
-    // min-height: 133px;
     position: relative;
     top: -10px;
     z-index: 40;
+    height: 249px;
+    @media screen and (max-width: 679px) {
+       height: auto;
+    }
     &--text{
         color: global.$primary;
         padding: 18px 27px 20px 18px;
@@ -52,5 +50,6 @@
     }
 }
 
-
-
+.dropdown_about{
+    height: 146px;
+}
