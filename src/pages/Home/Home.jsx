@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("data.json");
+      const response = await fetch(`${process.env.PUBLIC_URL}/data.json`);
       const jsonData = await response.json();
       setData(jsonData);
     };
