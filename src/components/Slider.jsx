@@ -23,6 +23,18 @@ const Slider = ({ images }) => {
     );
   };
 
+  if (images.length === 1) {
+    return (
+      <div>
+        <img
+          className="slider-image"
+          src={images[currentIndex]}
+          alt="slider images"
+        />
+      </div>
+    );
+  }
+
   return (
     <div>
       <button className="button__img" onClick={previousImage}>

@@ -7,7 +7,7 @@ Composant fonctionnel représentant une carte cliquable menant vers une page de 
 @param {Object} props - L'objet de props
 @param {string} props.id - L'ID du lien de la page 
 @param {string} props.title - Le titre de la carte
-@param {string} props.cover - L'URL de l'image de couverture de la carte
+@param {string} props.cover - L'image de couverture de la carte
 @returns {JSX.Element} - Un élément JSX représentant la carte
 */
 const Card = ({ id, title, cover }) => {

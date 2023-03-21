@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer";
 import Dropdown from "../../components/Dropdown";
 import Rating from "../../components/Rating";
@@ -17,6 +17,7 @@ import Header from "../../components/Header";
 const LocationPage = () => {
   const [data, setData] = useState([]);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,6 +29,19 @@ const LocationPage = () => {
   }, [id]);
 
   const selectedItem = data.find((item) => item.id === id);
+
+  /**
+   * Vérifie si l'ID de la location est valide et redirige l'utilisateur vers la page d'erreur si nécessaire.
+   * @param {Array} data - Les données de toutes les locations.
+   * @param {string} id - L'ID de la location sélectionnée.
+   * @param {function} navigate - La fonction navigate de React Router.
+   * @param {Object} selectedItem - L'objet représentant les détails de la location sélectionnée.
+   */
+  useEffect(() => {
+    if (data.length > 0 && selectedItem === undefined) {
+      navigate("/notFoundPage");
+    }
+  }, [data, id, navigate, selectedItem]);
 
   return (
     <div className="location_page">

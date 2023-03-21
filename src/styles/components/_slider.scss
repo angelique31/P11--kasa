@@ -14,13 +14,17 @@
         position: absolute;
         bottom: 45px;
         right: 20px;
-        font-size: 1.3rem;
-        font-weight: 800;
+        font-size: 1.1rem;
+        font-weight: 500;
+        font-family: global.$font1;
         color: global.$white;
         z-index: 1;
         left: 50%;
         @media screen and (max-width: 801px) {
             bottom: 26px;
+        }
+        @media screen and (max-width: 400px) {
+            display: none;
           }
     }
 }
